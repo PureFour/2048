@@ -1,6 +1,13 @@
 var Tiles = [];
 var level = new Level();
+var targetX, targetY;
+var click_sound, yeah_sound;
 
+function preload()
+{
+  click_sound = new Audio("click_sound.wav");
+  yeah_sound = new Audio("yeah.wav");
+}
 function setup()
 {
     createCanvas(500, 500);
@@ -16,7 +23,7 @@ function draw()
 {
   background(0,0,0);
   level.show();
-  for(let i = 0; i < Tiles.length; i++)
+  for(var i = 0; i < Tiles.length; i++)
   {
     Tiles[i].show();
     Tiles[i].move();
