@@ -12,15 +12,18 @@ function setup() {
   createCanvas(500, 500);
   // for(let i = 0; i < 7; i++)
   //   Tiles.push(new Tile(i * 50, 0, i + 1));
-  Tiles.push(new Tile(150, 150, 1));
-  Tiles.push(new Tile(250, 150, 1));
-  Tiles.push(new Tile(150, 250, 1));
-  Tiles.push(new Tile(250, 250, 1));
+  Tiles.push(new Tile(150, 150, 6));
+  Tiles.push(new Tile(250, 150, 6));
+  Tiles.push(new Tile(150, 250, 6));
+  Tiles.push(new Tile(250, 250, 6));
 }
 
 function draw() {
   background(0, 0, 0);
+  fill(255, 255, 255);
   level.show();
+  textSize(32);
+  text("Score : " + score, 50, 50);
   for (var i = 0; i < Tiles.length; i++) {
     Tiles[i].show();
     Tiles[i].move();

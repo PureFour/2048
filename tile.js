@@ -106,8 +106,8 @@ class Tile {
         return "rgb(255, 187, 40)";
       case 7:
         return "rgb(255, 0, 0)";
-      // case 8:
-      //   return (164, 47, 237);
+      case 8:
+        return "rgb(164, 47, 237)";
       // case 9:
       //   return (164, 47, 237);
       // case 10:
